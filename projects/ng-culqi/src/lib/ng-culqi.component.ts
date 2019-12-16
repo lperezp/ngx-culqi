@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgCulqiService } from './ng-culqi.service';
 
 @Component({
   selector: 'lib-ng-culqi',
@@ -11,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NgCulqiComponent implements OnInit {
 
-  constructor() { }
+  constructor(public culqiSrv : NgCulqiService) { }
 
   ngOnInit() {
   }
