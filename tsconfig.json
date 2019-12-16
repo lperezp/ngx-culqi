@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-culqi": [
+        "dist/ng-culqi"
+      ],
+      "ng-culqi/*": [
+        "dist/ng-culqi/*"
+      ]
+    }
   }
 }
