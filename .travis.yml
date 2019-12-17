@@ -10,4 +10,4 @@ before_script:
   - npm install -g @angular/cli
 script:
 - ng lint
-- ng build --prod --base-href https://t-palmer.github.io/travis-demo/
+- ng build --prod --base-href https://lperezp.github.io/ng-culqi/
