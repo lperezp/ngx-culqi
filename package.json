@@ -10,11 +10,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "--watch = false --no-progress --browsers = ChromeHeadlessNoSandbox --no-sandbox",
+    "test": "--watch = false --no-progress --browsers = ChromeHeadlessNoSandbox",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:ng-culqi": "ng-packagr -p projects/ng-culqi/ng-package.json",
-    "npm run test": "--watch = false --no-progress --browsers = ChromeHeadlessNoSandbox --no-sandbox"
+    "build:ng-culqi": "ng-packagr -p projects/ng-culqi/ng-package.json"
   },
   "private": true,
   "dependencies": {
