@@ -17,16 +17,7 @@ npm i ng-culqi
 ## Integración
 
 
-* En primer lugar, en la propiedad *script* del archivo ``package.json`` del proyecto, agregamos la siguiente línea: 
-
-```
-script:[
-        "node_modules/ng-culqi/callCulqi.js"
-       ]
-
-```
-
-* Ahora, declaremos el **NgCulqiModule** dentro del *app.module.ts*
+* En primer lugar, declaremos el **NgCulqiModule** dentro del *app.module.ts*
 
 ```
 import { NgModule } from '@angular/core';
