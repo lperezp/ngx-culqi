@@ -21,6 +21,7 @@ module.exports = function (config) {
       fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml'],
+    browsers: ['HeadlessChrome'],
       customLaunchers: {
       ChromeHeadlessNoSandbox: {
         base: 'ChromeHeadless',
