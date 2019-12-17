@@ -1,24 +1,13 @@
-
-dist: trusty
-sudo: false
-
 language: node_js
 node_js:
-  - '8'
-
-addons:
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
-
-cache:
-  directories:
-    - ./node_modules
-
-install:
-  - npm install
-
+  - "9"
+dist: trusty
+sudo: required
+branches:
+  only:
+  - master
+before_script:
+  - npm install -g @angular/cli
 script:
-  - npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
+- ng lint
+- ng build --prod --base-href https://t-palmer.github.io/travis-demo/
