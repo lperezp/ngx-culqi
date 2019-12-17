@@ -9,5 +9,4 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng lint
 - ng build --prod --base-href https://lperezp.github.io/ng-culqi/
