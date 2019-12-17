@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-declare let Culqi;
+declare let Culqi : any;
 
 @Injectable({
   providedIn: 'root'
