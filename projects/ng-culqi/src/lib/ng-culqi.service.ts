@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-export var Culqi : any;
+export var Culqi;
 
 @Injectable({
   providedIn: 'root'
@@ -17,9 +17,9 @@ export class NgCulqiService {
   });
 }
   
-  configCulqi(API_KEY : string,commerce : string,currency : string){
+  configCulqi(API_KEY= "e",commerce : string,currency : string){
     Culqi.publicKey = API_KEY;
-    this.settingsCulqi = {title : commerce,currency : currency}
+    this.settingsCulqi = { title : commerce,currency : currency }
   }
   
   optionCulqi(lang: string,modal:boolean,installments: string){

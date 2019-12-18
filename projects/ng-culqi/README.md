@@ -1,5 +1,8 @@
 # ng-culqi
 
+[![Build Status](https://travis-ci.org/lperezp/ng-culqi.svg?branch=master)](https://travis-ci.org/lperezp/ng-culqi) 
+![version](https://david-dm.org/lperezp/ng-culqi.svg)
+
 Biblioteca para integrar Culqi a un proyecto de Angular 7/8. Esta biblioteca trabaja con la [v3.0](https://checkout.culqi.com/js/v3) de [Culqi Checkout](https://www.culqi.com/docs/#/pagos/checkout).
 
 ## Instalación
@@ -15,16 +18,7 @@ npm i ng-culqi
 ## Integración
 
 
-* En primer lugar, en la propiedad *script* del archivo ``package.json`` del proyecto, agregamos la siguiente línea: 
-
-```
-script:[
-        "node_modules/ng-culqi/callCulqi.js"
-       ]
-
-```
-
-* Ahora, declaremos el **NgCulqiModule** dentro del *app.module.ts*
+* En primer lugar, declaremos el **NgCulqiModule** dentro del *app.module.ts*
 
 ```
 import { NgModule } from '@angular/core';
