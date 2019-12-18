@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
+export var Culqi : any;
 
 @Injectable({
   providedIn: 'root'
 })
 export class NgCulqiService {
-  Culqi;
   API_KEY: string;
   settingsCulqi : object;
   token_id : string;
@@ -18,12 +18,12 @@ export class NgCulqiService {
 }
   
   configCulqi(API_KEY : string,commerce : string,currency : string){
-    this.Culqi.publicKey = API_KEY;
+    Culqi.publicKey = API_KEY;
     this.settingsCulqi = {title : commerce,currency : currency}
   }
   
   optionCulqi(lang: string,modal:boolean,installments: string){
-    this.Culqi.options({
+    Culqi.options({
       lang: lang,
       modal: modal,
       installments: installments,
@@ -39,12 +39,12 @@ export class NgCulqiService {
   }
 
   openPayment(description: string,amount: number){
-    this.Culqi.settings({
+    Culqi.settings({
       title: this.settingsCulqi["title"],
       currency: this.settingsCulqi["currency"],
       description: description,
       amount: amount*100
     })
-    this.Culqi.open();
+    Culqi.open();
   }
 }
