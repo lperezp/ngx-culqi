@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/lperezp/ng-culqi.svg?branch=master)](https://travis-ci.org/lperezp/ng-culqi) 
 ![version](https://david-dm.org/lperezp/ng-culqi.svg)
 
-Biblioteca para integrar Culqi a un proyecto de Angular 7/8. Esta biblioteca trabaja con la [v3.0](https://checkout.culqi.com/js/v3) de [Culqi Checkout](https://www.culqi.com/docs/#/pagos/checkout).
+Biblioteca para integrar Culqi a un proyecto de Angular 7/8. Esta biblioteca trabaja con la [v3.0](https://checkout.culqi.com/js/v3) de [Culqi Checkout](https://www.culqi.com/docs/#/pagos/checkout). **Actualmente en desarrollo.**
 
 ## Instalación
 
