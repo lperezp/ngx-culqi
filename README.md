@@ -1,69 +1,27 @@
-# ng-culqi
+# NgCulqi
 
-[![Build Status](https://travis-ci.org/lperezp/ng-culqi.svg?branch=master)](https://travis-ci.org/lperezp/ng-culqi) 
-![version](https://david-dm.org/lperezp/ng-culqi.svg)
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
 
-Biblioteca para integrar Culqi a un proyecto de Angular 7/8. Esta biblioteca trabaja con la [v3.0](https://checkout.culqi.com/js/v3) de [Culqi Checkout](https://www.culqi.com/docs/#/pagos/checkout). **Actualmente en desarrollo.**
+## Development server
 
-## Instalación
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Vía npm
+## Code scaffolding
 
-* Descargamos el paquete mediante [npm](https://www.npmjs.com/). 
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-```
-npm i ng-culqi
-```
+## Build
 
-## Integración
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+## Running unit tests
 
-* En primer lugar, declaremos el **NgCulqiModule** dentro del *app.module.ts*
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-```
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+## Running end-to-end tests
 
-// Importamos el módulo de ng-culqi
-import { NgCulqiModule } from 'ng-culqi';
- 
-@NgModule({
-  imports: [
-    CommonModule,
-    NgCulqiModule // Añadimos el módulo en la propiedad imports:[]
-  ],
-  bootstrap: [],
-  declarations: [App]
-})
-class MainModule {}
-```
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Uso
+## Further help
 
-* Luego tenemos que configurar Culqi, llenando información acerca del comercio como el **nombre del comercio**, **tu API KEY pública**. 
-
-```
-import { CulqiService } from 'ng-culqi';
- 
-@Component({...})
-export class NombreDeTuComponente {
-  constructor(private culqiSrv: CulqiService) {}
- 
-  ngOnInit() {
-    this.culqiSrv.configCulqi('Nombre del Comercio', 'API_KEY');
-  }
-}
-```
-
-## Demo
-
-```
-git clone repositorio_example
-cd culqi-angular/
-npm install
-ng serve -o
-```
-
-## Licencia
-
-[Licencia MIT](LICENSE).
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
