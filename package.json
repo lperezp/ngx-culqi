@@ -1,6 +1,9 @@
 {
   "name": "ng-culqi",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Culqi Library for the Angular framework.",
+  "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +11,7 @@
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~12.2.0",
     "@angular/common": "~12.2.0",
