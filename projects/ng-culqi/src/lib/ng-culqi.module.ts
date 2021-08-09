@@ -1,16 +1,8 @@
 import { NgModule } from '@angular/core';
-import { NgCulqiComponent } from './ng-culqi.component';
-
-
 
 @NgModule({
-  declarations: [
-    NgCulqiComponent
-  ],
-  imports: [
-  ],
-  exports: [
-    NgCulqiComponent
-  ]
+  declarations: [],
+  imports: [],
+  exports: [],
 })
-export class NgCulqiModule { }
+export class NgCulqiModule {}
