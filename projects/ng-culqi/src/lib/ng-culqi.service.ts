@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-import { ICulqiSettings } from './models/culqi.model';
+import { ICulqiOptions, ICulqiSettings } from './models/culqi.model';
 
 export declare let Culqi: any;
 @Injectable({
@@ -24,15 +24,19 @@ export class NgCulqiService {
     Culqi.open();
   }
 
-  payOrder(culqiSettings: ICulqiSettings): void {
+  generateToken(
+    culqiSettings: ICulqiSettings,
+    culqiOptions?: ICulqiOptions
+  ): void {
     Culqi.settings(culqiSettings);
-
-    Culqi.options({
+    const culqiOptionsAux: ICulqiOptions = {
       lang: 'auto',
       modal: true,
       installments: false,
       customButton: '',
-    });
+    };
+    culqiOptions ? Culqi.options(culqiOptions) : Culqi.options(culqiOptionsAux);
+    Culqi.options();
     Culqi.open();
   }
 }

@@ -10,24 +10,18 @@ export interface ICulqiSettings {
 }
 
 export interface ICulqiOptions {
-  title: string;
-  currency: string;
-  description: string;
-  amount: number;
+  lang: string;
+  modal: boolean;
+  installments: boolean;
+  customButton: string;
+  style?: {
+    logo: string;
+    maincolor: string;
+    buttontext: string;
+    maintext: string;
+    desctext: string;
+  };
 }
-
-export interface IICulqi {
-  closeEvent: undefined;
-  container: '';
-  error: undefined;
-  getOptions: IGetOptions;
-  getSettings: IGetSettings;
-  name: string;
-  order: undefined;
-  publicKey: string;
-  token: undefined;
-}
-
 export interface IGetOptions {
   customButton: string;
   head: boolean;
