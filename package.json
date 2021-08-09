@@ -4,6 +4,14 @@
   "description": "Culqi Library for the Angular framework.",
   "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "javascript",
+    "node",
+    "npm",
+    "culqi",
+    "angular",
+    "ng-culqi"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -44,5 +52,13 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.3.5"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lperezp/ng-culqi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lperezp/ng-culqi/issues"
+  },
+  "homepage": "https://github.com/lperezp/ng-culqi#readme"
 }
