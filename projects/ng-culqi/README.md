@@ -1,24 +1,97 @@
-# NgCulqi
+# ng-culqi
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.14.
+[Culqi](https://culqi.com/) payment gateway library made to use with Angular.
 
-## Code scaffolding
+### Installation
 
-Run `ng generate component component-name --project ng-culqi` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-culqi`.
-> Note: Don't forget to add `--project ng-culqi` or else it will be added to the default project in your `angular.json` file. 
+Adding Scully to your project is as simple as running one command:
 
-## Build
+```
+npm i ng-culqi
+```
 
-Run `ng build ng-culqi` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Usage
 
-## Publishing
+After installation add this code below the ``app-root`` tag in the ``index.html``.
 
-After building your library with `ng build ng-culqi`, go to the dist folder `cd dist/ng-culqi` and run `npm publish`.
+```
+  <app-root></app-root>
+  <script src="https://checkout.culqi.com/js/v3"></script>
+  <script>
+    function culqi() {
+      console.log("iniio");
+      if (Culqi.token) {
+        var token = Culqi.token.id;
+        var payment_event = new CustomEvent("payment_event", {
+          detail: token,
+        });
+        document.dispatchEvent(payment_event);
+      }
+    }
+  </script>
+```
 
-## Running unit tests
+Inside the component, modify the constructor and add the following code:
 
-Run `ng test ng-culqi` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+  constructor(private ngCulqiService: NgCulqiService) {
+    document.addEventListener('payment_event', (token: any) => {
+      this.TOKEN_CULQI = token.detail;
+    });
+  }
 
-## Further help
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Inside ``ngOnInit`` add the following script:
+
+```
+  ngOnInit() {
+    this.ngCulqiService.initCulqi('ENTER_PUBLIC_KEY');
+  }
+```
+
+***Replace with the PUBLIC KEY granted by Culqi.***
+
+Create the function to run the gateway. Within the function you have to configure your payment gateway with the data of the online store.
+You can also configure the button within the Culqi modal.
+
+***[Check Culqi documentation for more information](https://docs.culqi.com/#/pagos/inicio)***
+
+```
+  handleButtonPayment() {
+    const culqiSettings = {
+      title: 'My Angular Store',
+      currency: '',
+      description: 'item #01',
+      amount: 100.00,
+    };
+    const culqiOptions = {
+      lang: 'auto',
+      modal: true,
+      installments: false,
+      customButton: '',
+      style: {
+        logo: '',
+        maincolor: '',
+        buttontext: '',
+        maintext: '',
+        desctext: '',
+      },
+    };
+    this.ngCulqiService.generateToken(culqiSettings, culqiOptions);
+  }
+```
+
+### Author
+
+[lperezp](https://twitter.com/lperezp_pe)
+
+### Licence
+
+Licence MIT
+
+### Contributing
+
+We welcome all contributions. You can submit any ideas as pull requests or as GitHub issues.
+
+***Love ng-culqi? Give our repo a star.***
