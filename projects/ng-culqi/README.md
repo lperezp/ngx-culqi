@@ -31,13 +31,12 @@ After installation add this code below the ``app-root`` tag in the ``index.html`
   </script>
 ```
 
-Inside the component, modify the constructor and add the following code:
+Inside the class, add the __@HostListener__ decorator to catch the event from the _culqi.js_:
 
 ```
-  constructor(private ngCulqiService: NgCulqiService) {
-    document.addEventListener('payment_event', (token: any) => {
-      this.TOKEN_CULQI = token.detail;
-    });
+ @HostListener('document:payment_event', ['$event'])
+  onPaymentEventCustom($event: CustomEvent) {
+    this.TOKEN_CULQI = $event.detail;
   }
 
 ```
@@ -81,6 +80,11 @@ You can also configure the button within the Culqi modal.
     this.ngCulqiService.generateToken(culqiSettings, culqiOptions);
   }
 ```
+
+### Demo
+
+ [Ver Demo](https://github.com/lperezp/culqi-angular)
+ 
 
 ### Author
 

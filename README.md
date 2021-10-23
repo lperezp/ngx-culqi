@@ -31,7 +31,7 @@ After installation add this code below the ``app-root`` tag in the ``index.html`
   </script>
 ```
 
-Inside the component, add the __@HostListener__ decorator to catch the event from the _culqi.js_:
+Inside the class, add the __@HostListener__ decorator to catch the event from the _culqi.js_:
 
 ```
  @HostListener('document:payment_event', ['$event'])
