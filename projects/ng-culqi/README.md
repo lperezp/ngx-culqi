@@ -19,7 +19,6 @@ After installation add this code below the ``app-root`` tag in the ``index.html`
   <script src="https://checkout.culqi.com/js/v3"></script>
   <script>
     function culqi() {
-      console.log("iniio");
       if (Culqi.token) {
         var token = Culqi.token.id;
         var payment_event = new CustomEvent("payment_event", {
