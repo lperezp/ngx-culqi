@@ -1,8 +1,5 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "eff038f8-2cec-4f7c-acf2-a08100724d89"
-  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -15,37 +12,32 @@
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "tsConfig": "projects/ng-culqi/tsconfig.lib.json",
             "project": "projects/ng-culqi/ng-package.json"
           },
           "configurations": {
             "production": {
               "tsConfig": "projects/ng-culqi/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ng-culqi/tsconfig.lib.json"
             }
-          }
+          },
+          "defaultConfiguration": "production"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ng-culqi/src/test.ts",
             "tsConfig": "projects/ng-culqi/tsconfig.spec.json",
-            "karmaConfig": "projects/ng-culqi/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ng-culqi/tsconfig.lib.json",
-              "projects/ng-culqi/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
             ]
           }
         }
       }
     }
   },
-  "defaultProject": "ng-culqi"
+  "cli": {
+    "analytics": "989462a0-05e1-42d5-8931-8272062520f7"
+  }
 }

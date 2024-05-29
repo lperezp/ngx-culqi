@@ -2,15 +2,15 @@
 
 [Culqi](https://culqi.com/) payment gateway library made to use with Angular.
 
-### Installation
+## Installation
 
-Adding Scully to your project is as simple as running one command:
+Adding ng-culqi to your project is as simple as running one command:
 
 ```
 npm i ng-culqi
 ```
 
-### Usage
+## Usage
 
 After installation add this code below the ``app-root`` tag in the ``index.html``.
 
@@ -80,20 +80,20 @@ You can also configure the button within the Culqi modal.
   }
 ```
 
-### Demo
+## Demo
 
  [Ver Demo](https://github.com/lperezp/culqi-angular)
  
 
-### Author
+## Author
 
 [lperezp](https://twitter.com/lperezp_pe)
 
-### Licence
+## Licence
 
 Licence MIT
 
-### Contributing
+## Contributing
 
 We welcome all contributions. You can submit any ideas as pull requests or as GitHub issues.
 
