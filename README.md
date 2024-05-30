@@ -1,8 +1,37 @@
-# ng-culqi
+<p align="center">
+    <img width="230" src="https://i.ibb.co/3B95v9S/icon-ng-culqi.png">
+</p>
+
+<h1 align="center">
+ng-culqi
+</h1>
+
+<div align="center">
 
 [Culqi](https://culqi.com/) payment gateway library made to use with Angular.
 
-## Installation
+[![Github branch](https://github.com/lperezp/admin-box/actions/workflows/build.yml/badge.svg)](https://github.com/lperezp/admin-box/actions/workflows/build.yml)
+[![CodeFactor](https://www.codefactor.io/repository/github/lperezp/ng-culqi/badge?style=flat-square)](https://www.codefactor.io/repository/github/ng-zorro/ng-zorro-antd)
+[![Codecov](https://img.shields.io/codecov/c/github/lperezp/ng-culqi.svg?style=flat-square)](https://codecov.io/gh/lperezp/ng-culqi)
+[![GitHub Release Date](https://img.shields.io/github/release-date/lperezp/ng-culqi.svg?style=flat-square)](https://github.com/lperezp/ng-culqi/releases)
+[![npm package](https://img.shields.io/npm/v/ng-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ng-culqi)
+[![NPM downloads](http://img.shields.io/npm/dm/ng-culqi.svg?style=flat-square)](https://npmjs.org/package/ng-culqi)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Twitter](https://img.shields.io/badge/Twitter-lperezp_pe-blue.svg?style=flat-square&logo=twitter)](https://twitter.com/lperezp_pe)
+
+</div>
+
+
+## ☀️ License
+
+[MIT](https://github.com/lperezp/ng-culqi/blob/master/LICENSE)
+
+## 🖥 Environment Support
+
+* Angular `^18.0.0` [![npm package](https://img.shields.io/npm/v/ng-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ng-culqi)
+
+## 📦 Installation
 
 Adding ng-culqi to your project is as simple as running one command:
 
@@ -10,7 +39,7 @@ Adding ng-culqi to your project is as simple as running one command:
 npm i ng-culqi
 ```
 
-## Usage
+## 🔨 Usage
 
 After installation add this code below the ``app-root`` tag in the ``index.html``.
 
@@ -83,18 +112,20 @@ You can also configure the button within the Culqi modal.
 ## Demo
 
  [Ver Demo](https://github.com/lperezp/culqi-angular)
- 
 
-## Author
+## 🔗 Links
 
-[lperezp](https://twitter.com/lperezp_pe)
+* [Culqi](https://culqi.com/)
+* [Culqi Docs](https://docs.culqi.com/es/documentacion/)
 
-## Licence
+## 🤝 Contributing
 
-Licence MIT
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/lperezp/ng-culqi/pulls)
 
-## Contributing
+I welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/lperezp/ng-culqi/blob/master/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/lperezp/ng-culqi/pulls) or as [GitHub issues](https://github.com/lperezp/ng-culqi/issues).
 
-We welcome all contributions. You can submit any ideas as pull requests or as GitHub issues.
+## 🎉 Author
 
-***Love ng-culqi? Give our repo a star.***
+- [lperezp]( https://lperezp.dev/?utm_source=ng-culqi&utm_medium=github-ng-culqi&utm_campaign=ng-culqi&utm_id=github)
+
+**Love ng-culqi? Give our repo a star :star: :arrow_up:.**
