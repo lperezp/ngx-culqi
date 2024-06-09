@@ -1,6 +1,6 @@
 {
   "name": "ng-culqi-workspace",
-  "version": "0.0.0",
+  "version": "2.0.0-rc.1",
   "description": "Culqi Library for the Angular framework.",
   "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
   "license": "MIT",
@@ -46,5 +46,12 @@
     "karma-jasmine-html-reporter": "~2.1.0",
     "ng-packagr": "^18.0.0",
     "typescript": "~5.4.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lperezp/ng-culqi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lperezp/ng-culqi/issues"
   }
 }

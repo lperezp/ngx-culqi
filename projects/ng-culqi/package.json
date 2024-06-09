@@ -1,6 +1,17 @@
 {
   "name": "ng-culqi",
-  "version": "0.0.1",
+  "version": "2.0.0-rc.1",
+  "description": "Culqi Library for the Angular framework.",
+  "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "javascript",
+    "node",
+    "npm",
+    "culqi",
+    "angular",
+    "ng-culqi"
+  ],
   "peerDependencies": {
     "@angular/common": "^18.0.0",
     "@angular/core": "^18.0.0"
@@ -8,5 +19,12 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lperezp/ng-culqi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lperezp/ng-culqi/issues"
+  }
 }
