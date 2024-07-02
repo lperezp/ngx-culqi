@@ -3,4 +3,3 @@
  */
 
 export * from './lib/ng-culqi.service';
-export * from './lib/ng-culqi.component';
