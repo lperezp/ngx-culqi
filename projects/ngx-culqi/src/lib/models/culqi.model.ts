@@ -9,11 +9,11 @@ export interface ICulqiSettings {
 export interface ICulqiOptions {
     lang?: string;
     installments?: boolean;
-    paymentMethods?: PaymentMethods;
-    style?: Style
+    paymentMethods?: IPaymentMethods;
+    style?: IStyle
 }
 
-export interface PaymentMethods {
+export interface IPaymentMethods {
     tarjeta: boolean;
     yape: boolean;
     bancaMovil: boolean;
@@ -22,7 +22,7 @@ export interface PaymentMethods {
     cuotealo: boolean;
 }
 
-export interface Style {
+export interface IStyle {
     logo: string;
     bannerColor?: string;
     buttonBackground?: string;
@@ -38,12 +38,12 @@ export interface IOrderCulqi {
     currency_code: string;
     description: string;
     order_number: number;
-    client_details: ClientDetails;
+    client_details: IClientDetails;
     expiration_date: number;
     confirm: boolean;
 }
 
-export interface ClientDetails {
+export interface IClientDetails {
     first_name: string;
     last_name: string;
     email: string;

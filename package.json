@@ -1,5 +1,5 @@
 {
-  "name": "ng-culqi-workspace",
+  "name": "ngx-culqi-workspace",
   "version": "2.0.0-rc.1",
   "description": "Culqi Library for the Angular framework.",
   "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
@@ -10,7 +10,7 @@
     "npm",
     "culqi",
     "angular",
-    "ng-culqi"
+    "ngx-culqi"
   ],
   "scripts": {
     "ng": "ng",
@@ -49,9 +49,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lperezp/ng-culqi.git"
+    "url": "git+https://github.com/lperezp/ngx-culqi.git"
   },
   "bugs": {
-    "url": "https://github.com/lperezp/ng-culqi/issues"
+    "url": "https://github.com/lperezp/ngx-culqi/issues"
   }
 }

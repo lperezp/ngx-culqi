@@ -1,9 +1,9 @@
 <p align="center">
-    <img width="230" src="https://i.ibb.co/3B95v9S/icon-ng-culqi.png">
+    <img width="230" src="https://i.ibb.co/3B95v9S/icon-ngx-culqi.png">
 </p>
 
 <h1 align="center">
-ng-culqi
+ngx-culqi
 </h1>
 
 <div align="center">
@@ -11,11 +11,11 @@ ng-culqi
 [Culqi](https://culqi.com/) payment gateway library made to use with Angular.
 
 [![Github branch](https://github.com/lperezp/admin-box/actions/workflows/build.yml/badge.svg)](https://github.com/lperezp/admin-box/actions/workflows/build.yml)
-[![CodeFactor](https://www.codefactor.io/repository/github/lperezp/ng-culqi/badge?style=flat-square)](https://www.codefactor.io/repository/github/ng-zorro/ng-zorro-antd)
-[![Codecov](https://img.shields.io/codecov/c/github/lperezp/ng-culqi.svg?style=flat-square)](https://codecov.io/gh/lperezp/ng-culqi)
-[![GitHub Release Date](https://img.shields.io/github/release-date/lperezp/ng-culqi.svg?style=flat-square)](https://github.com/lperezp/ng-culqi/releases)
-[![npm package](https://img.shields.io/npm/v/ng-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ng-culqi)
-[![NPM downloads](http://img.shields.io/npm/dm/ng-culqi.svg?style=flat-square)](https://npmjs.org/package/ng-culqi)
+[![CodeFactor](https://www.codefactor.io/repository/github/lperezp/ngx-culqi/badge?style=flat-square)](https://www.codefactor.io/repository/github/ng-zorro/ng-zorro-antd)
+[![Codecov](https://img.shields.io/codecov/c/github/lperezp/ngx-culqi.svg?style=flat-square)](https://codecov.io/gh/lperezp/ngx-culqi)
+[![GitHub Release Date](https://img.shields.io/github/release-date/lperezp/ngx-culqi.svg?style=flat-square)](https://github.com/lperezp/ngx-culqi/releases)
+[![npm package](https://img.shields.io/npm/v/ngx-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ngx-culqi)
+[![NPM downloads](http://img.shields.io/npm/dm/ngx-culqi.svg?style=flat-square)](https://npmjs.org/package/ngx-culqi)
 [![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Twitter](https://img.shields.io/badge/Twitter-lperezp_pe-blue.svg?style=flat-square&logo=twitter)](https://twitter.com/lperezp_pe)
@@ -25,18 +25,18 @@ ng-culqi
 
 ## ☀️ License
 
-[MIT](https://github.com/lperezp/ng-culqi/blob/master/LICENSE)
+[MIT](https://github.com/lperezp/ngx-culqi/blob/master/LICENSE)
 
 ## 🖥 Environment Support
 
-* Angular `^18.0.0` [![npm package](https://img.shields.io/npm/v/ng-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ng-culqi)
+* Angular `^18.0.0` [![npm package](https://img.shields.io/npm/v/ngx-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ngx-culqi)
 
 ## 📦 Installation
 
-Adding ng-culqi to your project is as simple as running one command:
+Adding ngx-culqi to your project is as simple as running one command:
 
 ```
-npm i ng-culqi
+npm i ngx-culqi
 ```
 
 ## 🔨 Usage
@@ -120,12 +120,12 @@ You can also configure the button within the Culqi modal.
 
 ## 🤝 Contributing
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/lperezp/ng-culqi/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/lperezp/ngx-culqi/pulls)
 
-I welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/lperezp/ng-culqi/blob/master/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/lperezp/ng-culqi/pulls) or as [GitHub issues](https://github.com/lperezp/ng-culqi/issues).
+I welcome all contributions. Please read our [CONTRIBUTING.md](https://github.com/lperezp/ngx-culqi/blob/master/CONTRIBUTING.md) first. You can submit any ideas as [pull requests](https://github.com/lperezp/ngx-culqi/pulls) or as [GitHub issues](https://github.com/lperezp/ngx-culqi/issues).
 
 ## 🎉 Author
 
-- [lperezp]( https://lperezp.dev/?utm_source=ng-culqi&utm_medium=github-ng-culqi&utm_campaign=ng-culqi&utm_id=github)
+- [lperezp]( https://lperezp.dev/?utm_source=ngx-culqi&utm_medium=github-ngx-culqi&utm_campaign=ngx-culqi&utm_id=github)
 
-**Love ng-culqi? Give our repo a star :star: :arrow_up:.**
+**Love ngx-culqi? Give our repo a star :star: :arrow_up:.**

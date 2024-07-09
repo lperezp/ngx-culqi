@@ -1,5 +1,5 @@
 import { ModuleWithProviders } from '@angular/core';
-import { NgCulqiService } from './ng-culqi.service';
+import { NgxCulqiService } from './ngx-culqi.service';
 
 export class NgCulqiModule {
     public static forRoot(environment: any): ModuleWithProviders<NgCulqiModule> {
@@ -7,7 +7,7 @@ export class NgCulqiModule {
         return {
             ngModule: NgCulqiModule,
             providers: [
-                NgCulqiService,
+                NgxCulqiService,
                 {
                     provide: 'env',
                     useValue: environment

@@ -10,8 +10,8 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "paths": {
-      "ng-culqi": [
-        "./dist/ng-culqi"
+      "ngx-culqi": [
+        "./dist/ngx-culqi"
       ]
     },
     "esModuleInterop": true,

@@ -7,7 +7,7 @@ export declare let Culqi: any;
 @Injectable({
   providedIn: 'root'
 })
-export class NgCulqiService {
+export class NgxCulqiService {
   tokenCreatedSubject = new BehaviorSubject<string | null>(null);
   tokenCreated$ = this.tokenCreatedSubject.asObservable();
 
@@ -86,5 +86,7 @@ export class NgCulqiService {
 
   closeCulqi(): void {
     Culqi.close();
+    this.tokenCreatedSubject.unsubscribe();
+    this.orderCreatedSubject.unsubscribe();
   }
 }

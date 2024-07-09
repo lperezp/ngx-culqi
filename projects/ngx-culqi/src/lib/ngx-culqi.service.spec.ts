@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { NgCulqiService } from './ng-culqi.service';
+import { NgxCulqiService } from './ngx-culqi.service';
 
-describe('NgCulqiService', () => {
-  let service: NgCulqiService;
+describe('NgxCulqiService', () => {
+  let service: NgxCulqiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(NgCulqiService);
+    service = TestBed.inject(NgxCulqiService);
   });
 
   it('should be created', () => {
