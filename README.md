@@ -16,7 +16,7 @@ ngx-culqi
 [![GitHub Release Date](https://img.shields.io/github/release-date/lperezp/ngx-culqi.svg?style=flat-square)](https://github.com/lperezp/ngx-culqi/releases)
 [![npm package](https://img.shields.io/npm/v/ngx-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ngx-culqi)
 [![NPM downloads](http://img.shields.io/npm/dm/ng-culqi.svg?style=flat-square)](https://npmjs.org/package/ngx-culqi)
-[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/Nlperezp/ngx-culqi/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](https://github.com/lperezp/ngx-culqi/blob/master/LICENSE)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![Twitter](https://img.shields.io/badge/Twitter-lperezp_pe-blue.svg?style=flat-square&logo=twitter)](https://twitter.com/lperezp_pe)
 
