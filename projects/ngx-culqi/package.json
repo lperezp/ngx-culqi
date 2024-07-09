@@ -1,6 +1,6 @@
 {
   "name": "ngx-culqi",
-  "version": "2.0.0-rc.6",
+  "version": "2.0.0",
   "description": "Culqi Library for the Angular framework.",
   "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
   "license": "MIT",
