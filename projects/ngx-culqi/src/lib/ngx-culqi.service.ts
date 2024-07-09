@@ -37,7 +37,6 @@ export class NgxCulqiService {
     script.type = 'text/javascript';
     script.src = 'https://checkout.culqi.com/js/v4';
     script.onload = () => {
-      console.log('Culqi loaded');
       this.initCulqi(tokenCulqi);
       this.apiKeyCulqi = apiKeyCulqi;
     };
