@@ -3,18 +3,14 @@
 
 name: Node.js Package
 
-on:
-  release:
-    types: [created]
-
+'on':
+  push:
+    branches:
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Upload coverage reports to Codecov
-        uses: codecov/codecov-action@v4.0.1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v3
         with:
@@ -34,5 +30,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-      
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
