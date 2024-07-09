@@ -17,7 +17,7 @@ export class NgxCulqiService {
   apiKeyCulqi: string | null = null;
 
   constructor(private http: HttpClient) {
-    window.culqi = this.culqi.bind(this);
+    (window as any).culqi = this.culqi.bind(this);
   }
 
   setTokenCreated(value: string): void {

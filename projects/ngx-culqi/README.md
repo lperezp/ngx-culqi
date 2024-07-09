@@ -10,7 +10,7 @@ ngx-culqi
 
 [Culqi](https://culqi.com/) payment gateway library made to use with Angular.
 
-[![Github branch](https://github.com/lperezp/admin-box/actions/workflows/build.yml/badge.svg)](https://github.com/lperezp/admin-box/actions/workflows/build.yml)
+[![Github branch](https://github.com/lperezp/ngx-culqi/actions/workflows/build.yml/badge.svg)](https://github.com/lperezp/ngx-culqi/actions/workflows/build.yml)
 [![CodeFactor](https://www.codefactor.io/repository/github/lperezp/ngx-culqi/badge?style=flat-square)](https://www.codefactor.io/repository/github/ng-zorro/ng-zorro-antd)
 [![Codecov](https://img.shields.io/codecov/c/github/lperezp/ngx-culqi.svg?style=flat-square)](https://codecov.io/gh/lperezp/ngx-culqi)
 [![GitHub Release Date](https://img.shields.io/github/release-date/lperezp/ngx-culqi.svg?style=flat-square)](https://github.com/lperezp/ngx-culqi/releases)
