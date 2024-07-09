@@ -17,7 +17,7 @@ export class NgxCulqiService {
   apiKeyCulqi: string | null = null;
 
   constructor(private http: HttpClient) {
-    (window as any).culqi = this.culqi.bind(this);
+    window.culqi = this.culqi.bind(this);
   }
 
   setTokenCreated(value: string): void {
@@ -82,7 +82,7 @@ export class NgxCulqiService {
       const order = Culqi.order;
       this.setOrderCreated(order);
     } else {
-      console.log('Error :', Culqi.error);
+      throw new Error('Culqi has not been loaded correctly.', Culqi.error);
     }
   }
 
