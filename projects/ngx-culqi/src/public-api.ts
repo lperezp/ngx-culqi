@@ -3,4 +3,4 @@
  */
 
 export * from './lib/ngx-culqi.service';
-export * from './lib/ngx-culqi.module';
+export * from './lib/models/culqi.model';

@@ -14,9 +14,10 @@ export class NgxCulqiService {
   orderCreatedSubject = new BehaviorSubject<string | null>(null);
   orderCreated$ = this.orderCreatedSubject.asObservable();
 
+  apiKeyCulqi: string | null = null;
+
   constructor(private http: HttpClient) {
     (window as any).culqi = this.culqi.bind(this);
-    this.loadScriptCulqi();
   }
 
   setTokenCreated(value: string): void {
@@ -27,17 +28,18 @@ export class NgxCulqiService {
     this.orderCreatedSubject.next(value);
   }
 
-  initCulqi(): void {
-    Culqi.publicKey = 'environment.tokenCulqi';
+  initCulqi(tokenCulqi: string): void {
+    Culqi.publicKey = tokenCulqi;
   }
 
-  loadScriptCulqi(): void {
+  loadScriptCulqi(tokenCulqi: string, apiKeyCulqi: string): void {
     const script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = 'https://checkout.culqi.com/js/v4';
     script.onload = () => {
       console.log('Culqi loaded');
-      this.initCulqi();
+      this.initCulqi(tokenCulqi);
+      this.apiKeyCulqi = apiKeyCulqi;
     };
     document.head.appendChild(script);
   }
@@ -46,7 +48,7 @@ export class NgxCulqiService {
   generateOrder(order: IOrderCulqi): Observable<Partial<IOrderCulqiResponse>> {
     return this.http.post('https://api.culqi.com/v2/orders', order, {
       headers: {
-        Authorization: `Bearer ${'environment.apiKeyCulqi'}`
+        Authorization: `Bearer ${this.apiKeyCulqi}`
       }
     });
   }
