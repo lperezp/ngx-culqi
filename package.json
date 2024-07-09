@@ -1,6 +1,6 @@
 {
-  "name": "ng-culqi",
-  "version": "1.0.3",
+  "name": "ngx-culqi-workspace",
+  "version": "2.0.0",
   "description": "Culqi Library for the Angular framework.",
   "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
   "license": "MIT",
@@ -10,55 +10,48 @@
     "npm",
     "culqi",
     "angular",
-    "ng-culqi"
+    "ngx-culqi"
   ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint"
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
-  "private": false,
+  "private": true,
   "dependencies": {
-    "@angular/animations": "~12.2.0",
-    "@angular/common": "~12.2.0",
-    "@angular/compiler": "~12.2.0",
-    "@angular/core": "~12.2.0",
-    "@angular/forms": "~12.2.0",
-    "@angular/platform-browser": "~12.2.0",
-    "@angular/platform-browser-dynamic": "~12.2.0",
-    "@angular/router": "~12.2.0",
-    "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.11.4"
+    "@angular/animations": "^18.0.0",
+    "@angular/common": "^18.0.0",
+    "@angular/compiler": "^18.0.0",
+    "@angular/core": "^18.0.0",
+    "@angular/forms": "^18.0.0",
+    "@angular/platform-browser": "^18.0.0",
+    "@angular/platform-browser-dynamic": "^18.0.0",
+    "@angular/router": "^18.0.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^12.2.0",
-    "@angular/cli": "~12.2.0",
-    "@angular/compiler-cli": "~12.2.0",
-    "@types/jasmine": "~3.6.0",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.6.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~6.3.4",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.0.3",
-    "karma-jasmine": "~4.0.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "ng-packagr": "^12.2.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~8.3.0",
-    "tslint": "~6.1.0",
-    "typescript": "~4.3.5"
+    "@angular-devkit/build-angular": "^18.0.2",
+    "@angular/cli": "^18.0.2",
+    "@angular/compiler-cli": "^18.0.0",
+    "@types/jasmine": "~5.1.0",
+    "jasmine-core": "~5.1.0",
+    "karma": "~6.4.0",
+    "karma-chrome-launcher": "~3.2.0",
+    "karma-coverage": "~2.2.0",
+    "karma-jasmine": "~5.1.0",
+    "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.0.0",
+    "typescript": "~5.4.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lperezp/ng-culqi.git"
+    "url": "git+https://github.com/lperezp/ngx-culqi.git"
   },
   "bugs": {
-    "url": "https://github.com/lperezp/ng-culqi/issues"
-  },
-  "homepage": "https://github.com/lperezp/ng-culqi#readme"
+    "url": "https://github.com/lperezp/ngx-culqi/issues"
+  }
 }
