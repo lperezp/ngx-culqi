@@ -21,6 +21,9 @@ UNOFFICIAL [Culqi](https://culqi.com/) payment gateway library made to use with 
 
 </div>
 
+## Demo
+
+ [Ver Demo](https://lperezp.github.io/culqi-angular/)
 
 ## ☀️ License
 
@@ -104,11 +107,6 @@ Inside ``ngOnInit`` add the following script:
 ```
 
 ***[Check Culqi documentation for more information](https://docs.culqi.com/#/pagos/inicio)***
-
-
-## Demo
-
- [Ver Demo](https://lperezp.github.io/culqi-angular/)
 
 ## 🔗 Links
 
