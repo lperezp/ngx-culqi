@@ -1,6 +1,6 @@
 {
   "name": "ngx-culqi",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "UNOFFICIAL Culqi payment gateway library made to use with Angular by lperezp.dev",
   "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
   "license": "MIT",
