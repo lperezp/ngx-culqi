@@ -20,18 +20,31 @@ export class NgxCulqiService {
     (window as any).culqi = this.culqi.bind(this);
   }
 
+  /**
+    * @param {value} value of the token created by Culqi for backend
+    */
   setTokenCreated(value: string): void {
     this.tokenCreatedSubject.next(value);
   }
 
+  /**
+    * @param {value} value of the order id created by Culqi
+    */
   setOrderCreated(value: string): void {
     this.orderCreatedSubject.next(value);
   }
 
+  /**
+    * @param {tokenCulqi} token offered by Culqi
+    */
   initCulqi(tokenCulqi: string): void {
     Culqi.publicKey = tokenCulqi;
   }
 
+  /**
+    * @param {tokenCulqi} token offered by Culqi
+    * @param {apiKeyCulqi} apiKey offered by Culqi
+    */
   loadScriptCulqi(tokenCulqi: string, apiKeyCulqi: string): void {
     const script = document.createElement('script');
     script.type = 'text/javascript';
@@ -43,6 +56,10 @@ export class NgxCulqiService {
     document.head.appendChild(script);
   }
 
+  /**
+    * @param {order} order to be created for generate a payment
+    * @returns returns the order created by Culqi API
+    */
   generateOrder(order: IOrderCulqi): Observable<Partial<IOrderCulqiResponse>> {
     return this.http.post('https://api.culqi.com/v2/orders', order, {
       headers: {
@@ -51,6 +68,10 @@ export class NgxCulqiService {
     });
   }
 
+  /**
+    * @param {culqiSettings} e-commerce setup
+    * @param {culqiOptions} payment pop up configuration
+    */
   generateToken(culqiSettings: ICulqiSettings, culqiOptions?: ICulqiOptions): void {
     if (Culqi) {
       Culqi.settings(culqiSettings);
@@ -72,6 +93,9 @@ export class NgxCulqiService {
     }
   }
 
+  /**
+    * function for open Culqi payment pop up
+    */
   culqi(): void {
     if (Culqi.token) {
       const token = Culqi.token.id;
@@ -84,6 +108,9 @@ export class NgxCulqiService {
     }
   }
 
+  /**
+    * function for close Culqi payment pop up
+    */
   closeCulqi(): void {
     Culqi.close();
     this.tokenCreatedSubject.unsubscribe();
