@@ -43,7 +43,6 @@ export class NgxCulqiService {
     document.head.appendChild(script);
   }
 
-
   generateOrder(order: IOrderCulqi): Observable<Partial<IOrderCulqiResponse>> {
     return this.http.post('https://api.culqi.com/v2/orders', order, {
       headers: {
