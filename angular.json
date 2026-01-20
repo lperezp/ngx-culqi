@@ -11,9 +11,6 @@
       "architect": {
         "build": {
           "builder": "@angular/build:ng-packagr",
-          "options": {
-            "project": "projects/ngx-culqi/ng-package.json"
-          },
           "configurations": {
             "production": {
               "tsConfig": "projects/ngx-culqi/tsconfig.lib.prod.json"
@@ -25,13 +22,9 @@
           "defaultConfiguration": "production"
         },
         "test": {
-          "builder": "@angular/build:karma",
+          "builder": "@angular/build:unit-test",
           "options": {
-            "tsConfig": "projects/ngx-culqi/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
+            "tsConfig": "projects/ngx-culqi/tsconfig.spec.json"
           }
         }
       }

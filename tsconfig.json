@@ -29,5 +29,13 @@
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  }
+  },
+  "references": [
+    {
+      "path": "./projects/ngx-culqi/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ngx-culqi/tsconfig.spec.json"
+    }
+  ]
 }
