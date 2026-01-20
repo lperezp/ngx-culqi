@@ -31,7 +31,7 @@ UNOFFICIAL [Culqi](https://culqi.com/) payment gateway library made to use with 
 
 ## 🖥 Environment Support
 
-* Angular `^18.0.0` [![npm package](https://img.shields.io/npm/v/ngx-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ngx-culqi)
+* Angular `^21.0.0` [![npm package](https://img.shields.io/npm/v/ngx-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ngx-culqi)
 
 ## 📦 Installation
 
@@ -121,6 +121,6 @@ I welcome all contributions. Please read our [CONTRIBUTING.md](https://github.co
 
 ## 🎉 Author
 
-- [Luis Eduardo](https://lperezp.dev/?utm_source=ngx-culqi&utm_medium=readme&utm_campaign=ngx-culqi&utm_id=github)
+- [Luis Eduardo (lperezp)](https://lperezp.dev/?utm_source=ngx-culqi&utm_medium=readme&utm_campaign=ngx-culqi&utm_id=github)
 
 **Love ngx-culqi? Give our repo a star :star: :arrow_up:.**
