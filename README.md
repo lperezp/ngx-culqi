@@ -21,6 +21,8 @@ UNOFFICIAL [Culqi](https://culqi.com/) payment gateway library made to use with 
 
 </div>
 
+> **⚠️ Important note::** This is an unofficial solution. It originates from a personal initiative and has no direct affiliation with Culqi.
+
 ## Demo
 
  [Ver Demo](https://lperezp.github.io/culqi-angular/)
