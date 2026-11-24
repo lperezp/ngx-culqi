@@ -6,25 +6,30 @@
     "ngx-culqi": {
       "projectType": "library",
       "root": "projects/ngx-culqi",
-      "sourceRoot": "projects/ngx-culqi/src",
+      "sourceRoot": "projects/ngx-culqi",
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular/build:ng-packagr",
+          "builder": "@angular/build:library",
           "configurations": {
             "production": {
               "tsConfig": "projects/ngx-culqi/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/ngx-culqi/tsconfig.lib.json"
+              "compilationMode": "full"
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "production",
+          "options": {
+            "tsConfig": "projects/ngx-culqi/tsconfig.lib.json",
+            "outputPath": "dist/ngx-culqi"
+          }
         },
         "test": {
           "builder": "@angular/build:unit-test",
           "options": {
-            "tsConfig": "projects/ngx-culqi/tsconfig.spec.json"
+            "tsConfig": "projects/ngx-culqi/tsconfig.spec.json",
+            "polyfills": []
           }
         }
       }

@@ -1,7 +1,10 @@
 {
   "name": "ngx-culqi",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "UNOFFICIAL Culqi payment gateway library made to use with Angular by lperezp.dev",
+  "exports": {
+    ".": "./src/public-api.ts"
+  },
   "author": "Luis Eduardo <luiseperezp.10@gmail.com>",
   "license": "MIT",
   "keywords": [
@@ -13,11 +16,8 @@
     "ngx-culqi"
   ],
   "peerDependencies": {
-    "@angular/common": "^22.3.0",
-    "@angular/core": "^22.3.0"
-  },
-  "dependencies": {
-    "tslib": "^2.9.1"
+    "@angular/common": "^22.0.0",
+    "@angular/core": "^22.0.0"
   },
   "sideEffects": false,
   "repository": {
