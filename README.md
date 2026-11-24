@@ -33,7 +33,7 @@ UNOFFICIAL [Culqi](https://culqi.com/) payment gateway library made to use with 
 
 ## 🖥 Environment Support
 
-* Angular `^21.0.0` [![npm package](https://img.shields.io/npm/v/ngx-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ngx-culqi)
+* Angular `^22.0.0` [![npm package](https://img.shields.io/npm/v/ngx-culqi.svg?style=flat-square)](https://www.npmjs.org/package/ngx-culqi)
 
 ## 📦 Installation
 
